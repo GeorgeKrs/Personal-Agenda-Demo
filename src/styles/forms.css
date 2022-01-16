@@ -1,0 +1,11 @@
+.form-control:focus {
+  border-color: var(--bs-info) !important;
+  border-width: 1px;
+  box-shadow: none !important;
+  transition: 150ms;
+}
+
+.h5-headings {
+  text-decoration: underline;
+  font-weight: bold;
+}

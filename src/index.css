@@ -1,13 +1,81 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "../src/styles/colors.css";
+@import "../src/styles/forms.css";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+  min-height: 100vh !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (max-width: 600px) {
+  #menu_title {
+    display: none;
+  }
+  #dataOnPC {
+    display: none;
+  }
+  #dataOnMob {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #dataOnPC {
+    display: block;
+  }
+  #dataOnMob {
+    display: none;
+  }
+}
+
+/*  CSS-scrollbar */
+.comments-div {
+  overflow-y: auto;
+  overflow-x: hidden !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--bs-secondary);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bs-dark);
+  border-radius: 5px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-gray);
+}
+
+.blurred-div {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.max-img-dimensions {
+  max-width: 500px !important;
+  max-height: 500px !important;
 }
