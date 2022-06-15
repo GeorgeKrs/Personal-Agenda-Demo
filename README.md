@@ -7,6 +7,6 @@ Below there is a link for a live demo of the application.
 
 Tech Used: TypeScript, React.JS, Bootstrap5, HTML5, CSS3, Firebase/Firestore
 
-Link to Demo App: personal-agenda-demo.web.app
+Link to Demo App: https://personal-agenda-demo.web.app
 
 Feel free to visit my personal website to see more: https://georgekoursoumis.web.app
